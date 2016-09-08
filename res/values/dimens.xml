@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_bar_height">50dip</dimen>
+	<dimen name="gesture_area_height">100dip</dimen>
+	<dimen name="src_num_width">30dip</dimen>
+	<dimen name="src_num_height">20dip</dimen>
+   
+</resources>
+   

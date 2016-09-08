@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kedacom.platform2mc"
+    android:sharedUserId="com.kedacom"
+    android:versionCode="1000431"
+    android:versionName="1.00.0431" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19"/>
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/> 
+	<uses-permission android:name="android.permission.CAMERA"/> 
+	<uses-permission android:name="android.permission.RECORD_AUDIO"/> 
+	
+    <application
+        android:allowBackup="false"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:icon="@drawable/ic_launcher"
+        android:name="com.kedacom.platform2mc.MainApplication">
+                
+        <meta-data android:name="APPLICATION_CLASS_NAME" 
+            android:value="com.kedacom.platform2mc.MyApplication"/>
+         
+        <activity
+            android:name="com.kedacom.platform2mc.ui.LogoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme.NoActionBar.Fullscreen" >
+
+        </activity>
+        <activity
+            android:name="com.kedacom.platform2mc.ui.UploadInfo.MultiImageChooserActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@style/AppBaseTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.kedacom.platform2mc.ui.UploadInfo.UploadListView"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@style/AppBaseTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.kedacom.platform2mc.ui.UserActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme.NoActionBar" >
+
+        </activity>
+        <activity
+            android:name="com.kedacom.platform2mc.ui.ScoreActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme.NoActionBar" >
+
+        </activity>
+        <activity
+            android:name="com.kedacom.platform2mc.ui.ChangePasswordActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.kedacom.platform2mc.ui.SettingsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.kedacom.platform2mc.ui.VisionSelectActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.kedacom.platform2mc.ui.RecTypeSelectActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.kedacom.platform2mc.ui.UploadInfo.Recorder"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@style/AppBaseTheme.NoActionBar.Fullscreen" >
+
+        </activity>
+        <activity
+            android:name="com.kedacom.platform2mc.ui.UploadInfo.UploadSend"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@style/AppBaseTheme.NoActionBar" >
+            
+        </activity>
+         
+        <activity
+            android:name="com.kedacom.platform2mc.ui.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensor"
+            android:theme="@style/AppBaseTheme.NoActionBar"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="openiphoenixmain" />
+            </intent-filter>
+        </activity>
+        <provider
+            android:name="com.kedacom.platform2mc.provider.DevicesProvider"
+            android:authorities="com.kedacom.platform2mc" />
+         
+    </application>
+
+</manifest>

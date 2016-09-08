@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+
+	    <include
+	        android:id="@+id/title_bar"
+	        layout="@layout/titlebar" />
+
+		<TextView
+		    android:id="@+id/divisionLine"
+	    	android:layout_below="@id/title_bar"
+		    android:layout_width="match_parent"
+		    android:layout_height="1dip"
+		    android:background="#FF343A43"/>
+
+	    <FrameLayout
+	    	android:id="@+id/select_record_time_bar"
+	    	android:layout_below="@id/divisionLine"
+	        android:layout_width="match_parent"
+	        android:layout_height="55dip"
+	        android:background="@drawable/style_login_button"
+	        android:orientation="horizontal"
+	        android:visibility="gone">
+	        <TextView
+	        	android:id="@+id/record_time"
+	        	android:layout_width="match_parent"
+	        	android:layout_height="match_parent"
+	        	android:textColor="@color/white"
+		        android:layout_gravity="center"
+		        android:gravity="center"
+		        android:textSize="16sp"
+		        android:text="@string/choose_review_time"/>
+	        <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_gravity="right"
+	            android:src="@drawable/img_pulist_right_normal"/>
+	    </FrameLayout>
+
+	    <FrameLayout
+	        android:id="@+id/folder_container"
+	        android:layout_below="@id/select_record_time_bar"
+	        android:layout_width="match_parent"
+	        android:layout_height="55dip"
+	        android:background="@drawable/device_item_bg_down"
+	        android:orientation="horizontal" >
+
+	        <HorizontalScrollView
+	            android:id="@+id/scroll_view"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_marginLeft="74dip"
+	            android:padding="0dip"
+	            android:scrollbarSize="0dip"
+	            android:scrollbars="none" >
+
+	            <LinearLayout
+	                android:id="@+id/folder_name_list"
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:layout_margin="0dip"
+	                android:orientation="horizontal"
+	                android:padding="0dip" >
+	            </LinearLayout>
+	        </HorizontalScrollView>
+	        <Button
+	            android:id="@+id/root"
+	            android:layout_width="90dip"
+	            android:background="@drawable/style_folder_button_first"
+	            android:textColor="@color/white"
+	            android:layout_height="match_parent" />
+	    </FrameLayout>
+
+		<FrameLayout
+			android:id="@+id/bottom_button_group"
+			android:layout_width="match_parent"
+			android:layout_height="50dip"
+			android:layout_alignParentBottom="true"
+			android:layout_marginBottom="10dip"
+	        android:layout_marginTop="10dip">
+		    <Button
+		        android:id="@+id/devicelist_start_preview_btn"
+		        android:layout_width="160dip"
+		        android:layout_height="50dip"
+		        android:layout_gravity="center"
+		        android:background="@drawable/style_login_button"
+		        android:text="@string/start_preview_num"
+		        android:textColor="@drawable/style_login_button_text"
+		        android:textSize="20sp" />
+	        <Button
+		        android:id="@+id/select_all"
+		        android:layout_width="25dip"
+		        android:layout_height="25dip"
+		        android:layout_gravity="center_vertical|right"
+		        android:layout_marginRight="25dip"
+		        android:background="@drawable/btn_click_select_all"/>
+	    </FrameLayout>
+
+	    <com.kedacom.platform2mc.ui.RollBackListView
+	        android:id="@+id/devicelist"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_below="@id/folder_container"
+	        android:layout_above="@id/bottom_button_group"
+	        android:divider="@drawable/separator"
+	        android:listSelector="@drawable/style_device_list_item"
+	        android:fastScrollAlwaysVisible="false"
+	        android:fastScrollEnabled="false" />
+
+	</RelativeLayout>
+
+	<FrameLayout
+		android:id="@+id/pickerFrame"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+        android:visibility="invisible">
+		<LinearLayout
+	    	android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	        android:layout_gravity="bottom"
+	    	android:orientation="vertical"
+		   	android:background="@color/white">
+		   	<LinearLayout
+		    	android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:layout_marginTop="10dip"
+		    	android:orientation="horizontal">
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_gravity="left"
+				    android:layout_marginLeft="10dip"
+				    android:textColor="@color/black"
+				    android:textSize="18sp"
+				    android:text="@string/start_time_string"/>
+			    <TextView
+				    android:id="@+id/time_pick_done"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:gravity="right"
+				    android:paddingRight="10dip"
+				    android:textColor="@color/blue"
+				    android:textSize="18sp"
+				    android:text="@string/time_pick_done_string"/>
+		    </LinearLayout>
+
+		   	<LinearLayout
+		    	android:id="@+id/date_and_time_picker"
+		    	android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:gravity="center"
+		    	android:orientation="vertical">
+				<DatePicker
+					android:id="@+id/date_picker"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content"
+			    	android:calendarViewShown="false">
+			    </DatePicker>
+			    <TimePicker
+					android:id="@+id/time_picker"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content">
+			    </TimePicker>
+		    </LinearLayout>
+			<!-- <LinearLayout
+		    	android:id="@+id/date_and_time_picker"
+		    	android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:gravity="center"
+		    	android:orientation="vertical">
+				<DatePicker
+					android:id="@+id/date_picker"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content"
+			    	android:layout_weight="1"
+			    	android:calendarViewShown="false">
+			    </DatePicker>
+			    <TimePicker
+					android:id="@+id/time_picker"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content"
+			    	android:layout_weight="1">
+			    </TimePicker>
+		    </LinearLayout> -->
+		</LinearLayout>
+	</FrameLayout>
+	<EditText 
+        android:id="@+id/search_edit"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:textColor="@color/white"
+        android:singleLine="true"
+        android:layout_marginTop="2dip"
+        android:layout_marginLeft="50dip"
+        android:layout_marginRight="50dip"/>
+    <Button 
+        android:id="@+id/search_button"
+        android:background="@drawable/style_search_button"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginRight="10dip"
+        android:layout_gravity="right"
+        android:visibility="gone"/>
+</FrameLayout>

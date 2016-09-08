@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">民防视频</string>
+    <string name="nothing" />
+    <string name="pull_to_refresh_pull_label">aaaaa</string>
+    <string name="log_out">注 销</string>
+    <string name="scroe">评分</string>
+    <!-- Login -->
+    <string name="login">"登  录"</string>
+    <string name="save_password">自动登录</string>
+    <string name="login_succeed">登录成功</string>
+    <string name="connect_server_fail">连接服务器失败</string>
+    <string name="get_device_fail">获取设备列表失败</string>
+    <string name="domain_error">域名错误</string>
+    <string name="user_info_error">用户名或密码错误</string>
+    <string name="create_connection_error">创建链接失败</string>
+    <string name="device_remain_zero">剩余设备个数为0</string>
+    <string name="no_device_online">无设备在线</string>
+    <!-- Server List -->
+    <string name="device_list_title">设备列表</string>
+    <string name="device_list_root_button">监控列表</string>
+        <string name="device_title_left">关闭</string>
+    <string name="device_title_right">全选</string>
+    <!-- Menu -->
+    <string name="menu_liveview">实时预览</string>
+    <string name="start_preview_num">开始预览(%1$d)</string>
+    <string name="pull_to_refresh_tap_label">下拉刷新&#8230;</string>
+    <string name="pull_to_refresh_release_label">松开刷新&#8230;</string>
+    <string name="pull_to_refresh_refreshing_label">正在加载&#8230;</string>
+    <string name="device_list_start_load">开始加载</string>
+    <string name="last_refresh_time">最后更新：</string>
+    <!-- Live -->
+    <string name="live_preview_title">视频浏览</string>
+    <string name="review_capture_title">查看抓拍</string>
+    <string name="review_record_title">录像回放</string>
+    <string name="live_resolution_high">清晰</string>
+    <string name="live_resolution_normal">流畅</string>
+    <string name="score_title">评分</string>
+    <string name="score_second_title">你觉得哪项需要改进？</string>
+    <string name="score_item_1">软件功能</string>
+    <string name="score_item_2">操作体验</string>
+    <string name="score_item_3">配色风格</string>
+    <string name="your_opinion">请留下您宝贵的意见</string>
+    
+    <string name="user_title">个人中心</string>
+    <string name="goto_mark">去评分</string>
+    <string name="user_name">用户名</string>
+    <string name="user_ip">IP</string>
+    <string name="user_log_out">退出</string>
+    <string name="score_value_text">评分：</string>
+    <string name="score_confirm">提交</string>
+    <string name="toast_reach_max">已达到最大浏览量</string>
+    <string name="toast_already_selected">正在浏览</string>
+    <string name="exit_alert_title">警告</string>
+    <string name="exit_alert_message">确认退出？</string>
+    <string name="video_source_playing">正在播放</string>
+    
+    <string name="sdCard_Unmounted">未装载SD卡</string>
+    <string name="check">查看</string>
+    <string name="check_capture">抓拍成功</string>
+    <string name="check_record">查看录像</string>
+    <string name="capture_failed">抓拍失败</string>
+    <string name="preview_failed">%s浏览失败</string>
+    <string name="login_failed">登录失败，请检查用户名，密码，IP地址是否正确</string>
+    <string name="update_title">版本更新</string>
+    <string name="update_message">发现新版本，是否进行更新？</string>
+    <string name="version_error">平台版本号配置故障</string>
+    <string name="get_device_failed">获取设备失败</string>
+    <string name="get_group_fail">获取分组失败</string>
+    <string name="heart_beat_error">心跳失败</string>
+    <string name="choose_review_time">选择回放时间</string>
+    <string name="start_review_time">开始时间：</string>
+    <string name="start_review">开始回放</string>
+    <string name="time_pick_done_string">完成</string>
+    <string name="start_time_string">开始时间</string>
+    <string name="no_device_is_selected">尚未选择任何设备</string>
+    <string name="device_offline_while_recording">录像中的设备已掉线</string>
+    <string name="search_record_fail">查询录像失败</string>
+</resources>

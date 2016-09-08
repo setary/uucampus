@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kedacom.platform2mc.ui.LivePreviewContainer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/select_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dip" >
+
+        <SurfaceView
+            android:id="@+id/window_preview_surfaceview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/window_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/window_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/nothing"
+            android:src="@drawable/window_view_refresh_selector"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/window_preview_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/surface_bg_normal"
+            android:contentDescription="@string/nothing"
+            android:scaleType="fitXY"
+            android:visibility="visible" />
+        <ImageView
+            android:id="@+id/selected_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/nothing"
+            android:scaleType="fitXY"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/window_preview_text_state_info"
+            android:layout_width="match_parent"
+            android:layout_height="16dip"
+            android:layout_gravity="bottom"
+            android:layout_margin="0dip"
+            android:background="@color/grey"
+            android:ellipsize="end"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="1dip"
+            android:paddingRight="1dip"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+        	android:id="@+id/recorder_layout"
+            android:layout_width="match_parent"
+            android:layout_height="16dip"
+            android:layout_gravity="bottom" >
+
+            <ImageView
+                android:id="@+id/recorder_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dip"
+                android:layout_alignParentRight="true"
+                android:visibility="visible"
+                android:src="@drawable/recorder_icon" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</com.kedacom.platform2mc.ui.LivePreviewContainer>

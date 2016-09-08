@@ -1,0 +1,22 @@
+<resources>
+
+    <!--
+        Base application theme for API 11+. This theme completely replaces
+        AppBaseTheme from res/values/styles.xml on API 11+ devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!-- API 11 theme customizations can go here. -->
+    </style>
+    <style name="AppBaseTheme.NoActionBar.Fullscreen" parent="android:Theme.Black.NoTitleBar.Fullscreen">
+        <!-- API 11 theme customizations can go here. -->
+    </style>
+    <style name="AppBaseTheme.NoActionBar" parent="android:Theme.Black.NoTitleBar">
+        <!-- API 11 theme customizations can go here. -->
+        <item name="android:windowBackground">@drawable/login_bg</item>
+    </style>
+    <style name="AlertDialogCustom" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:windowBackground">@drawable/dialog_bg</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>

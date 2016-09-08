@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+   	<color name="grey">#33888888</color>
+   	<color name="green">#009933</color>
+   	<color name="red">#FF0000</color>
+   	<color name="blue">#1E90FF</color>
+   	<color name="orange">#ffa500</color>
+   	<color name="orangered">#ff4500</color>
+   	<color name="gainsboro">#DCDCDC</color>
+   	<color name="login_edit_enable">#ffffff</color>
+   	<color name="login_edit_disenable">#898a8c</color>
+   	<color name="login_button_enable">#ffffff</color>
+   	<color name="login_button_disenable">#7f7f7f</color>
+   	<color name="list_item_down">#182435</color>
+   	<color name="live_window_select">#FF2bb2ff</color>
+   	<color name="live_window_normal">#00000000</color>
+   	<color name="live_window_select_text">#412bb2ff</color>
+   	<color name="live_window_normal_text">#41000000</color>
+   	<color name="user_info_text">#818d9c</color>
+   	<color name="list_item_status">#009944</color>
+</resources>

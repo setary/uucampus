@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg" >
+
+    <TextView
+        android:id="@+id/user_icon"
+        android:layout_width="match_parent"
+        android:layout_height="120dip"
+        android:layout_alignParentTop="true"
+        android:drawableTop="@drawable/style_user_icon"
+        android:gravity="center"
+        android:paddingTop="8dip"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/buttom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/log_out"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true" >
+            
+            <LinearLayout
+                android:id="@+id/change_pwd_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/style_user_button"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/style_change_pwd_button" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|start"
+                    android:text="@string/change_pwd"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+           
+            <LinearLayout
+                android:id="@+id/log_out_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/style_user_button"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/style_logout_button" />
+	            <TextView
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:gravity="center|end"
+	                android:paddingRight="20dp"
+	                android:paddingLeft="10dp"
+	                android:text="@string/log_out"
+	                android:textColor="@color/white"
+	                android:textSize="18sp" />  
+            </LinearLayout> 
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttom_layout"
+        android:layout_below="@id/user_icon"
+        android:orientation="vertical"
+        android:paddingTop="5dip" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/navigation_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/navigation_live"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/style_navigation_button_bg"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="16dip"
+                    android:drawableTop="@drawable/style_navigation_live_icon"
+                    android:gravity="center"
+                    android:text="@string/live_preview_title"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/divisionLine"
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="#FF343A43" />
+
+            <LinearLayout
+                android:id="@+id/review_record"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/style_navigation_button_bg"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="16dip"
+                    android:drawableTop="@drawable/style_navigation_record_review"
+                    android:gravity="center"
+                    android:text="@string/review_record_title"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/navigation_line" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/settings"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/style_navigation_button_bg"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="16dip"
+                    android:drawableTop="@drawable/style_navigation_settings_icon"
+                    android:gravity="center"
+                    android:text="@string/settings_nav"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/divisionLine2"
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="#FF343A43" />
+
+            <LinearLayout
+                android:id="@+id/upload_list"
+                android:visibility="invisible"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/style_navigation_button_bg"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="16dip"
+                    android:drawableTop="@drawable/style_navigation_live_icon"
+                    android:gravity="center"
+                    android:text="@string/upload_list_title"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

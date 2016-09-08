@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dip"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="15dip"
+    android:layout_marginTop="15dip"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ptz_amplify" />
+
+    <FrameLayout
+        android:id="@+id/right_layout"
+        android:layout_width="80dip"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true" >
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:button="@drawable/style_device_list_checkbox"
+            android:clickable="false"
+            android:paddingLeft="10dip"
+            android:paddingRight="20dip" />
+
+        <TextView
+            android:id="@+id/status"
+            android:gravity="center"
+            android:textColor="@color/list_item_status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_toLeftOf="@id/right_layout"
+        android:layout_toRightOf="@id/icon"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip"
+        android:scrollHorizontally="true"
+        android:textColor="@drawable/list_item_text"
+        android:textSize="18sp" />
+
+</RelativeLayout>

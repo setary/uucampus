@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/title_bar"
+            layout="@layout/titlebar" />
+
+        <TextView
+            android:id="@+id/divisionLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_below="@id/title_bar"
+            android:background="#FF343A43" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height" >
+
+        <ImageView
+            android:id="@+id/choose_button"
+            android:layout_width="@dimen/title_bar_height"
+            android:layout_height="@dimen/title_bar_height"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/liveperview_capture" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="@dimen/title_bar_height"
+            android:layout_height="@dimen/title_bar_height"
+            android:layout_toLeftOf="@id/choose_button"
+            android:src="@drawable/style_search_button" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/image_sources"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/capture_image"
+            android:gravity="center"
+            android:text="aaaaaaaaaaa"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/record_video"
+            android:text="bbbbbbbbbbb"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/my_choose_ui"
+            android:text="ccccccccccccc"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</FrameLayout>

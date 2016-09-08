@@ -1,0 +1,78 @@
+<resources>
+
+    <string name="app_name">China Mobile</string>
+    <string name="nothing" />
+    <string name="log_out">Log out</string>
+    <string name="scroe">Scroe</string>
+    <!-- Login -->
+    <string name="login">Login</string>
+    <string name="save_password">Auto Login</string>
+    <string name="login_succeed">Login succeed</string>
+    <string name="connect_server_fail">connect server fail</string>
+    <string name="get_device_fail">get devices fail</string>
+    <string name="domain_error">domain error</string>
+    <string name="user_info_error">user info error</string>
+    <string name="create_connection_error">create connection error</string>
+    <string name="device_remain_zero">device remain zero</string>
+    <string name="no_device_online">no device online</string>
+    <!-- Server List -->
+    <string name="device_list_title">device list</string>
+    <string name="device_list_root_button">device list</string>
+    <string name="menu_liveview">Live</string>
+    <string name="start_preview_num">start(%d)</string>
+    <string name="pull_to_refresh_tap_label">refresh&#8230;</string>
+    <string name="pull_to_refresh_release_label">refresh&#8230;</string>
+    <string name="pull_to_refresh_refreshing_label">loading&#8230;</string>
+    <string name="device_list_start_load">start</string>
+    <string name="last_refresh_time">last time：</string>
+    <string name="pull_to_refresh_pull_label">aaaaa</string>
+    <string name="device_title_left">Close</string>
+    <string name="device_title_right">All</string>
+    <!-- Live -->
+    <string name="live_preview_title">Live</string>
+    <string name="review_capture_title">Review capture</string>
+    <string name="review_record_title">Review record</string>
+    <string name="live_resolution_high">better</string>
+    <string name="live_resolution_normal">normal</string>
+    <string name="score_title">score</string>
+    <string name="score_second_title">Please choose one item you want us to improve:</string>
+    <string name="score_item_1">function</string>
+    <string name="score_item_2">user experience</string>
+    <string name="score_item_3">color</string>
+    <string name="your_opinion">your opinion</string>
+    
+    <string name="user_title">User Info</string>
+    <string name="goto_mark">goto mark</string>
+    <string name="user_name">user name</string>
+    <string name="user_ip">IP</string>
+    <string name="user_log_out">log out</string>
+    <string name="score_value_text">Score: </string>
+    <string name="score_confirm">Upload</string>
+    <string name="toast_reach_max">reach max</string>
+    <string name="toast_already_selected">already added in other window</string>
+    <string name="exit_alert_title">Alert</string>
+    <string name="exit_alert_message">Confirm to exit?</string>
+    <string name="video_source_playing">playing</string>
+    
+    <string name="sdCard_Unmounted">SD card unmounted</string>
+    <string name="check">Check</string>
+    <string name="check_capture">Capture succeed</string>
+    <string name="check_record">Check record</string>
+    <string name="capture_failed">Capture failed</string>
+    <string name="preview_failed">%splay failed</string>
+    <string name="login_failed">Login failed, please check the account, password and IP address</string>
+    <string name="update_title">Update</string>
+    <string name="update_message">New version is found, go to update?</string>
+    <string name="version_error">Obtain wrong version code</string>
+    <string name="get_device_failed">Get device fail.</string>
+    <string name="get_group_fail">Get group fail.</string>
+    <string name="heart_beat_error">Heart error</string>
+    <string name="choose_review_time">Choose review time</string>
+    <string name="start_review_time">Start review:</string>
+    <string name="start_review">Start review</string>
+    <string name="time_pick_done_string">Done</string>
+    <string name="start_time_string">Start time</string>
+    <string name="no_device_is_selected">Not any device has been selected</string>
+    <string name="device_offline_while_recording">Device offline while recording</string>
+    <string name="search_record_fail">Search record fail</string>
+</resources>
